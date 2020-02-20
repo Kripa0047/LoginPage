@@ -1,0 +1,205 @@
+.container  {
+    background-color: #D8D8D8;
+    height: 100vh;
+    position: relative;
+    box-shadow: #9C9C9C;
+}
+
+.subContainer   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.colorBorder    {
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, #9F97EB, #49BEDB, #8BD073, #D5D04B, #EC5758);
+}
+
+.content    {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 15%;
+    border-radius: 0 0 4px 4px
+}
+
+.header {
+    padding: 30px 0;
+    font-size: 130%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #496575;
+}
+
+.inputContainer {
+    padding-bottom: 30px;
+}
+
+.inputFild  {
+    border: none;
+    border-bottom: 1.5px solid #B6B6B6;
+    outline: none;
+    width: 100%;
+    height: 20px;
+    font-size: 70%;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.inputFild::placeholder {
+    color: #B6B6B6;
+}
+
+.forgetPass {
+    float: left;
+}
+
+.forgetPass > a {
+    color: #B6B6B6;
+    font-size: 80%;
+}
+
+.memorize   {
+    color: #B6B6B6;
+    font-size: 70%;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 18px;
+    margin-left: 8px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9C9C9C;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    text-align: start;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.yes, .no {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 80%;
+    transition: .4s;
+}
+
+.yes  {
+    padding-left: 5px;
+}
+
+.no   {
+    padding-left: 5px;
+}
+  
+input:checked + .slider {
+    background-color: #28B577;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #28B577;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.loginButton  {
+      background-color: #28B577;
+      padding: 12px 0;
+      border-radius: 30px;
+      font-size: 90%;
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 2px;
+      cursor: pointer;
+}
+
+.noAccount    {
+      font-size: 80%;
+      margin-top: 10px;
+      padding-bottom: 40px;
+}
+
+.noAccount > span, .noAccount> a {
+      color: #9C9C9C;
+      font-weight: 500;
+}
+
+.facebookLogo {
+      font-size: 250%;
+      margin-right: 40px;
+      font-weight: 600;
+}
+
+.facebook {
+      background-color: #3B5998;
+      margin-top: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 15px 0;
+      color: #ffffff;
+      font-size: 80%;
+      font-weight: 500;
+      letter-spacing: 2px;
+}
+
+.facebook > span {
+      vertical-align: middle;
+}
+
+@media only screen and (max-width: 450px) {
+    .subContainer   {
+        width: 300px;
+    }
+
+    .inputContainer {
+        text-align: center !important;
+    }
+
+    .forgetPass , .memorize {
+        display: block;
+        float: none;
+    }
+    
+    .memorize   {
+        margin-top: 10px;
+    }
+  }
